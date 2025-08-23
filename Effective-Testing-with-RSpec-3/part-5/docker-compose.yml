@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: effective_testing_with_rspec3_part_5
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
