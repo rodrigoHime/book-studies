@@ -1,2 +1,4 @@
 /Effective-Testing-with-RSpec-3/part-5/app/test.rb
 /Effective-Testing-with-RSpec-3/part-5/app/test_done.rb
+.DS_Store
+.idea/
