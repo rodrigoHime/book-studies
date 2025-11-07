@@ -3,3 +3,5 @@
 <%= turbo_stream.update("no-favorites") do %>
   &nbsp;
 <% end %>
+<%= turbo_stream.update("favorites-count", plain: current_user.favorites.count) %>
+

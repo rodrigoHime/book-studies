@@ -7,7 +7,11 @@
 # Visit https://pragprog.com/titles/nrclient2 for more book information.
 #---
 class FavoritesController < ApplicationController
-  def index; end
+  def index
+    if params[:count_only]
+      render(partial: "favorites/count")
+    end
+  end
 
   def create
     @favorite = Favorite.create(user: current_user, concert_id: params[:concert_id])
